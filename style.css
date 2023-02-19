@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+}
+
+:root{
+    /*primerio*/    
+    --Very-dark-blue /*main background*/: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue /*card background*/: hsl(244, 38%, 16%);
+    --Soft-violet /*accent*/: hsl(277, 64%, 61%);
+    /*neutoras*/
+    --White /*main heading, stats*/: hsl(0, 0%, 100%);
+    --Slightly-transparent-white /*main paragraph*/: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white /*stat headings*/: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    display: flex;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1440px){
+   
+}
+
+@media screen and (min-width: 375px){
+    body{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        display: flex;
+        width: 330px;
+        height: 650px;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--Dark-desaturated-blue);
+        border-radius: 10px;
+        color: var(--White)
+    }
+
+    .card_ilustracao{
+        background-image: url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 330px;
+        border-radius: 10px 10px 0 0;
+        width: 330px;
+        height: 200px;
+    }
+
+    .card_texto{
+        width: 330px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-titulo{
+        margin: 10px 0;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        font-family: 'Inter', sans-serif;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-titulo > span{
+        color: var(--Soft-violet);
+        margin: 0 5px;
+    }
+
+    .card-paragraf{
+        width: 210px;
+        margin: 10px 0;
+        display: flex;
+        text-align: center;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.674);
+    }
+
+    .itens{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 70px 0 0 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+    }
+    
+    .cds{
+        margin: 5px;
+    }
+
+    .itens_titulo{
+        margin-bottom: 5px;
+    }
+
+    .itens_paragrafo{
+        color: rgba(255, 255, 255, 0.674);
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+}
